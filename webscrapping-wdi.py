@@ -54,7 +54,5 @@ if response.status_code == 200:
 
 else:
     print("Error: Unable to fetch data from the API.")
-
-df_wide = df.pivot_table(index='date', columns='countryiso3code', values='value', aggfunc='first')
-
-df=df_wide
+    
+df = df.pivot_table(index='date', columns='countryiso3code', values='value', aggfunc='first')
