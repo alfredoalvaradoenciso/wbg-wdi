@@ -30,8 +30,8 @@ plt.bar([i + 2 * width for i in x], collapsed_data['WLD'], width=width, label="W
 plt.bar([i + 3 * width for i in x], collapsed_data['ECA'], width=width, label="ECA")
 
 plt.xlabel("")
-plt.ylabel("Title y axis")
-plt.title("Title")
+plt.ylabel("Annual % change")
+plt.title("Average GDP growth rate")
 plt.xticks([i + 1.5 * width for i in x], date_values)
 plt.legend()
 plt.show()
